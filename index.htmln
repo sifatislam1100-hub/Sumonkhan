@@ -1,0 +1,73 @@
+tossmaster
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toss Master</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Arial;
+  background:#000;
+  color:#fff;
+  text-align:center;
+}
+.container{
+  padding:20px;
+}
+.logo{
+  width:120px;
+  border-radius:50%;
+}
+.timer{
+  font-size:40px;
+  color:red;
+}
+.btn{
+  display:block;
+  background:#00ff3c;
+  color:black;
+  padding:15px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+  <p>Dubai No.1 Cricket Analyst</p>
+
+  <img class="logo" src="https://i.imgur.com/9Xq6bQp.png">
+
+  <h1>TOSS MASTER</h1>
+
+  <p>🎯 Toss, Match Prediction</p>
+  <p>🔥 MATCH Mein Iss Baar</p>
+
+  <div class="timer" id="time">30</div>
+
+  <a class="btn" href="https://t.me/premiumoffical">
+    JOIN TELEGRAM
+  </a>
+
+  <p style="font-size:11px;">
+    Educational purpose only
+  </p>
+</div>
+
+<script>
+let t=30;
+setInterval(()=>{
+ if(t>0){
+  t--;
+  document.getElementById("time").innerText=t;
+ }
+},1000);
+</script>
+
+</body>
+</html>
